@@ -265,7 +265,6 @@
 			}
 			markers = [];
 		}
-		alert("sdasda");
 		// 검색결과 목록 하단에 페이지번호를 표시는 함수입니다
 		function displayPagination(pagination) {
 			var paginationEl = document.getElementById('pagination'), fragment = document
