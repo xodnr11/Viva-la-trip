@@ -23,20 +23,24 @@
 		 -->
 	<%
 		String id = request.getParameter("id");
+		
 		//아이디 값 비교
 		for(int i=0;i<arraylist.size();i++){
 			if( arraylist.get(i).getId().equals(id) ){
 				log = 1;
 			}
 		}
-		if(log != 1){ //아이디 중복 x //아이디 새로 만듬
+		if(log != 1){ //아이디 중복 x //회원가입 성공
 			String pw = request.getParameter("pw");
-			instance.setMember(id, pw);
+			String date_of_birth = request.getParameter("date_of_birth");
+			String gender = request.getParameter("gender");
+			String username = request.getParameter("username");
+			instance.setMember(id, pw, date_of_birth, gender,username);
 			//회원전용 페이지로 이동
 			session.setAttribute("login_log",log); // -1
 			response.sendRedirect("index.jsp"); 
-		}else{ //아이디 중복 log = 1 로그인 실패 
-			//다시 로그인 페이지로 돌아가기
+		}else{ //아이디 중복 log = 1 회원가입 실패
+			//다시 로그인 페이지로 넘어가기
 			session.setAttribute("login_log",log); // 1
 			response.sendRedirect("login.jsp"); 
 			

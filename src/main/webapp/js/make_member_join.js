@@ -1,6 +1,7 @@
 /**
  * 
  */
+
  
         const signup = document.querySelector(".signup");
         const termCond = document.querySelector("#accept");

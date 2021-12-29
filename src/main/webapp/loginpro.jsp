@@ -11,7 +11,6 @@
 </head>
 <body>
 <%
-		System.out.println("11");
 		DAO instance = DAO.getInstance(); //객체 주소 불러옴(객체 만듬)
 		instance.getMember(); //select 함수 불러오기
 		ArrayList<DTO> arraylist = instance.arraylist; //어레이 리스트 가져오기
@@ -24,13 +23,14 @@
 		 -->
 	<%
 		String id = request.getParameter("id");
+		String pw = request.getParameter("pw");
 		//아이디 값 비교
 		for(int i=0;i<arraylist.size();i++){
-			
 			if( arraylist.get(i).getId().equals(id) ){
-				log = 2;
+				if(arraylist.get(i).getPw().equals(pw)){
+					log = 2;
+				}
 			}
-			
 		}
 		if(log != 2){ //아이디 중복 x //아이디 없음
 			//회원가입 페이지로 가기 

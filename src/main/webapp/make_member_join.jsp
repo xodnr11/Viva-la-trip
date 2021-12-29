@@ -3,60 +3,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="EUC-KR">
 <title>회원가입</title>
-    <link rel="stylesheet" href="make_member_join.css">
-    
+  <link rel="stylesheet" href="make_member_join.css">
 </head>
 <body>
-
-	 <div class="container">
+<div class="container">
         <h2>Sign Up</h2>
 
-        <form action="">
+        <form action="make_member_joinpro.jsp">
             <div class="form-item-username">
-                <input type="text" name="firstName" id="firstName" placeholder="First Name">
-                <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+                <input name="username" placeholder="Name">
+                <input name="gender" placeholder="Ex)M or W">
+            </div>
+			
+            <div class="form-item">
+            	<input name="id" placeholder="ID">	
+                <input name="date_of_birth" placeholder="Ex)19450815">
             </div>
 
             <div class="form-item">
-                <input type="email" name="email" id="email" placeholder="Email">
-            </div>
-
-            <div class="form-item">
-                <!-- add a password format display -->
+                 add a password format display
                 <span class="pwd-format">
                     8-15 AlphaNumeric Characters
                 </span>
-                <input type="password" name="password" id="password" placeholder="Enter password">
-                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password">
+                <input name="pw" id="password" placeholder="Enter password">
+                <input name="confirmPassword" id="confirmPassword" placeholder="Confirm password">
             </div>
 
             <div class="accept-box">
                 <input type="checkbox" name="accept" id="accept">
-                <p>I accept the <a href="#">Terms & Conditions</a></p>
+                <p> <a href="#">개인정보 수집 방침에 동의합니다.</a></p>
             </div>
 
             <div class="form-btns">
-                <button class="signup" type="submit" disabled>Sign Up</button>
+                <button class="signup" type="submit">가입하기</button>
                 <div class="options">
-                    Already have an account? <a href="#">Login here</a>
+                    이미 가입하신 아이디가 있으신가요? <a href="login.jsp">로그인 하러가기</a>
                 </div>
             </div>
 
-        </form>
+        </form>  
+ 
+  <!--<form action ="make_member_joinpro.jsp">
+  	아이디 :<input name = "id">
+  	비밀번호 : <input name = "pw">
+  	이름 : <input name = "username">
+  	생년월일 : <input name = "date_of_birth">
+  	성별 : <input name = "gender">
+  	<button>가입하기</button>
+  </form>  -->
+
     </div>
 
-  
-
-    
-	
-	<form action="make_member_joinpro.jsp">
-		아이디를 입력하시오 :  <input name="id"> <br>
-		비밀번호 입력하시오 :  <input name="pw"> <br>
-		비밀번호를 확인    :  <input name="pw_check">
-		<button value="회원가입_완료">회원가입 완료</button>
-	</form>
-	<script type="text/javascript" src="make_member_join.js"></script>
+	<!-- <script type="text/javascript" src="make_member_join.js"></script> -->
 </body>
 </html>
