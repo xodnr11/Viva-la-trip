@@ -14,8 +14,8 @@
     <link rel="shortcut icon" type="image/x-icon"
         href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png">
     <!--CSS-->
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=0fe1da3ede2a77fb6b630f550f0c09ed"></script>
 

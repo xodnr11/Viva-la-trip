@@ -5,13 +5,13 @@
 <head>
 <meta charset="EUC-KR">
 <title>회원가입</title>
-  <link rel="stylesheet" href="make_member_join.css">
+  <link rel="stylesheet" href="css/make_member_join.css">
 </head>
 <body>
 <div class="container">
         <h2>Sign Up</h2>
 
-        <form action="make_member_joinpro.jsp">
+        <form action="css/make_member_joinpro.jsp">
             <div class="form-item-username">
                 <input name="username" placeholder="Name">
                 <input name="gender" placeholder="Ex)M or W">

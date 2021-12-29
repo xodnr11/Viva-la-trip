@@ -11,9 +11,9 @@
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <!--CSS-->
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="makeSchedule.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/makeSchedule.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 
