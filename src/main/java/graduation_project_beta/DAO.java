@@ -23,7 +23,7 @@ public class DAO {
 		//db 커넥션 메소드 선언
 		public Connection getConnection() {
 			//mysql의 graduationdb주소
-			String dbURL = "jdbc:mysql://localhost:3307/GraduationDB?serverTimezone=UTC&useSSL=false"; 
+			String dbURL = "jdbc:mysql://localhost:3306/GraduationDB?serverTimezone=UTC&useSSL=false"; 
 			String dbID = "root";
 			String dbPassword = "root";
 			try { //오류가 나도 상관없이 실행 되도돌 트라이 캐치문 활용
