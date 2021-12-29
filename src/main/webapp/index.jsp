@@ -28,7 +28,7 @@
             <div class="container">
                 <div class="header">
                     <div class="header-logo">
-                        <a id="logo">Viva La Trip</a>
+                        <a id="logo">Viva La Trip testtest11</a>
                     </div>
                     <div class="header-menu">
                         <a>국내 /</a>
