@@ -68,6 +68,7 @@
 	<script type="text/javascript"
 		src="//dapi.kakao.com/v2/maps/sdk.js?appkey=eb35eb3a356a7589f696a82e382206f1&libraries=services"></script>
 	<script>
+		//test11
 		//값받아서 찢아버리기
 		temp = location.href.split("?");
 
