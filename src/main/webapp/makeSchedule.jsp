@@ -143,8 +143,7 @@
 			var listEl = document.getElementById('placesList'), 
 				menuEl = document.getElementById('menu_wrap'), 
 				selListEl = document.getElementById('selectedList'), 
-				fragment = document.createDocumentFragment(), 
-				//fragment2 = document.createDocumentFragment(), 
+				fragment = document.createDocumentFragment(),
 				bounds = new kakao.maps.LatLngBounds(), 
 				listStr = '';
 
@@ -160,8 +159,7 @@
 				var placePosition = new kakao.maps.LatLng(places[i].y, places[i].x), 
 					marker = addMarker(placePosition, i),
 					itemEl = getListItem(i, places[i]); // 검색 결과 항목 Element를 생성합니다
-				
-				//var test = itemEl.cloneNode(true);
+
 				// 검색된 장소 위치를 기준으로 지도 범위를 재설정하기위해
 				// LatLngBounds 객체에 좌표를 추가합니다
 				bounds.extend(placePosition);
@@ -209,8 +207,7 @@
 			
 			// 검색결과 항목들을 검색결과 목록 Elemnet에 추가합니다
 			listEl.appendChild(fragment);
-			menuEl.scrollTop = 0;
-			//selListEl.appendChild(fragment2);
+			menuEl.scrollTop = 0
 			// 검색된 장소 위치를 기준으로 지도 범위를 재설정합니다
 			map.setBounds(bounds);
 		}

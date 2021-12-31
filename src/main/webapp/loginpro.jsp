@@ -15,12 +15,11 @@
 		instance.getMember(); //select 함수 불러오기
 		ArrayList<DTO> arraylist = instance.arraylist; //어레이 리스트 가져오기
 		int log = -2; //
-		
-		int T;
+
 	%>
 	<!-- 데이터만 확인하고
 		로그인이 되면 index로
-		안되면 다시 로그인 페이지로 testtest
+		안되면 다시 로그인 페이지로
 		 -->
 	<%
 		String id = request.getParameter("id");
