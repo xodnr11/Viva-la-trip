@@ -68,6 +68,7 @@
 	<script type="text/javascript"
 		src="//dapi.kakao.com/v2/maps/sdk.js?appkey=eb35eb3a356a7589f696a82e382206f1&libraries=services"></script>
 	<script>
+
 		//값받아서 찢아버리기
 		temp = location.href.split("?");
 		//test11
@@ -86,7 +87,6 @@
 			level : 3
 		// 지도의 확대 레벨
 		};
-
 		// 지도를 생성합니다    
 		var map = new kakao.maps.Map(mapContainer, mapOption);
 
