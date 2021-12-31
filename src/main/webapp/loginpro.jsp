@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="utf-8">
 <title>Insert title here</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
 	%>
 	<!-- 데이터만 확인하고
 		로그인이 되면 index로
-		안되면 다시 로그인 페이지로
+		안되면 다시 로그인 페이지로 testtest
 		 -->
 	<%
 		String id = request.getParameter("id");
