@@ -37,6 +37,7 @@
 			<div id="calendar">
 				<input class="dateSelector" placeholder="날짜 입력" style="width: 100%;"/>
 			</div>
+			<hr>
 			<div id="table">
 				<ul id="selectedList"></ul>
 			</div>
@@ -193,11 +194,13 @@
 							function() {
 								test = itemEl.cloneNode(true);
 								selListEl.appendChild(test);
+								$("#table_wrap").scrollTop($(document).height());
 							});
 
 					itemEl.onclick = function() {
 						test = itemEl.cloneNode(true);
 						selListEl.appendChild(test);
+						$("#table_wrap").scrollTop($(document).height());
 					};
 
 				})(marker, itemEl);

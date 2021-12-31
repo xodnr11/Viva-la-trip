@@ -42,4 +42,28 @@ overflow-y:auto;background:rgba(255, 255, 255, 0.7);z-index: 1;font-size:12px;bo
 padding:5px;overflow-y:auto;background:rgba(255, 255, 255, 0.7);z-index: 1;
 font-size:12px;border-radius: 10px;}
 #table_wrap #calendar {width: 100%}
-#menu_wrap hr {display: block; height: 1px;border: 0; border-top: 2px solid #5F5F5F;margin:3px 0;}
+#table_wrap #table hr {display: block; height: 1px;border: 0; border-top: 2px solid #5F5F5F;margin:3px 0;}
+#selectedList li {list-style: none;}
+#selectedList .item {position:relative;border-bottom:1px solid #888;overflow: hidden;cursor: pointer;min-height: 65px;}
+#selectedList .item span {display: block;margin-top:4px;}
+#selectedList .item h5, #placesList .item .info {text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+#selectedList .item .info{padding:10px 0 10px 55px;}
+#selectedList .info .gray {color:#8a8a8a;}
+#selectedList .info .jibun {padding-left:26px;background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/places_jibun.png) no-repeat;}
+#selectedList .info .tel {color:#009900;}
+#selectedList .item .markerbg {float:left;position:absolute;width:36px; height:37px;margin:10px 0 0 10px;background:url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/marker_number_blue.png) no-repeat;}
+#selectedList .item .marker_1 {background-position: 0 -10px;}
+#selectedList .item .marker_2 {background-position: 0 -56px;}
+#selectedList .item .marker_3 {background-position: 0 -102px}
+#selectedList .item .marker_4 {background-position: 0 -148px;}
+#selectedList .item .marker_5 {background-position: 0 -194px;}
+#selectedList .item .marker_6 {background-position: 0 -240px;}
+#selectedList .item .marker_7 {background-position: 0 -286px;}
+#selectedList .item .marker_8 {background-position: 0 -332px;}
+#selectedList .item .marker_9 {background-position: 0 -378px;}
+#selectedList .item .marker_10 {background-position: 0 -423px;}
+#selectedList .item .marker_11 {background-position: 0 -470px;}
+#selectedList .item .marker_12 {background-position: 0 -516px;}
+#selectedList .item .marker_13 {background-position: 0 -562px;}
+#selectedList .item .marker_14 {background-position: 0 -608px;}
+#selectedList .item .marker_15 {background-position: 0 -654px;}
