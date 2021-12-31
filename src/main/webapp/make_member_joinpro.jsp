@@ -1,46 +1,46 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset="
+    pageEncoding="utf-8"%>
         <%@page import="java.util.ArrayList"%>
 <%@page import="graduation_project_beta.DAO"%>
 <%@page import="graduation_project_beta.DTO"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="utf-8">
 <title>Insert title here</title>
 </head>
 <body>
 <%
-		DAO instance = DAO.getInstance(); //°´Ã¼ ÁÖ¼Ò ºÒ·¯¿È(°´Ã¼ ¸¸µë)
-		instance.getMember(); //select ÇÔ¼ö ºÒ·¯¿À±â
-		ArrayList<DTO> arraylist = instance.arraylist; //¾î·¹ÀÌ ¸®½ºÆ® °¡Á®¿À±â
+		DAO instance = DAO.getInstance(); //ê°ì²´ ì£¼ì†Œ ë¶ˆëŸ¬ì˜´(ê°ì²´ ë§Œë“¬)
+		instance.getMember(); //select í•¨ìˆ˜ ë¶ˆëŸ¬ì˜¤ê¸°
+		ArrayList<DTO> arraylist = instance.arraylist; //ì–´ë ˆì´ ë¦¬ìŠ¤íŠ¸ ê°€ì ¸ì˜¤ê¸°
 		int log = -1; //
 		
 	%>
-	<!-- µ¥ÀÌÅÍ¸¸ È®ÀÎÇÏ°í
-		·Î±×ÀÎÀÌ µÇ¸é index·Î
-		¾ÈµÇ¸é ´Ù½Ã ·Î±×ÀÎ ÆäÀÌÁö·Î
+	<!-- ë°ì´í„°ë§Œ í™•ì¸í•˜ê³ 
+		ë¡œê·¸ì¸ì´ ë˜ë©´ indexë¡œ
+		ì•ˆë˜ë©´ ë‹¤ì‹œ ë¡œê·¸ì¸ í˜ì´ì§€ë¡œ
 		 -->
 	<%
 		String id = request.getParameter("id");
 		
-		//¾ÆÀÌµğ °ª ºñ±³
+		//ì•„ì´ë”” ê°’ ë¹„êµ
 		for(int i=0;i<arraylist.size();i++){
 			if( arraylist.get(i).getId().equals(id) ){
 				log = 1;
 			}
 		}
-		if(log != 1){ //¾ÆÀÌµğ Áßº¹ x //È¸¿ø°¡ÀÔ ¼º°ø
+		if(log != 1){ //ì•„ì´ë”” ì¤‘ë³µ x //íšŒì›ê°€ì… ì„±ê³µ
 			String pw = request.getParameter("pw");
 			String date_of_birth = request.getParameter("date_of_birth");
 			String gender = request.getParameter("gender");
 			String username = request.getParameter("username");
 			instance.setMember(id, pw, date_of_birth, gender,username);
-			//È¸¿øÀü¿ë ÆäÀÌÁö·Î ÀÌµ¿
+			//íšŒì›ì „ìš© í˜ì´ì§€ë¡œ ì´ë™
 			session.setAttribute("login_log",log); // -1
 			response.sendRedirect("index.jsp"); 
-		}else{ //¾ÆÀÌµğ Áßº¹ log = 1 È¸¿ø°¡ÀÔ ½ÇÆĞ
-			//´Ù½Ã ·Î±×ÀÎ ÆäÀÌÁö·Î ³Ñ¾î°¡±â
+		}else{ //ì•„ì´ë”” ì¤‘ë³µ log = 1 íšŒì›ê°€ì… ì‹¤íŒ¨
+			//ë‹¤ì‹œ ë¡œê·¸ì¸ í˜ì´ì§€ë¡œ ë„˜ì–´ê°€ê¸°
 			session.setAttribute("login_log",log); // 1
 			response.sendRedirect("login.jsp"); 
 			

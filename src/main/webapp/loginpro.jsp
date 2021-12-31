@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
-            <%@page import="java.util.ArrayList"%>
+<%@page import="java.util.ArrayList"%>
 <%@page import="graduation_project_beta.DAO"%>
 <%@page import="graduation_project_beta.DTO"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="utf-8">
 <title>Insert title here</title>
 </head>
 <body>
@@ -16,6 +16,7 @@
 		ArrayList<DTO> arraylist = instance.arraylist; //어레이 리스트 가져오기
 		int log = -2; //
 		
+		int T;
 	%>
 	<!-- 데이터만 확인하고
 		로그인이 되면 index로
