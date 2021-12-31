@@ -68,7 +68,7 @@
 	<script type="text/javascript"
 		src="//dapi.kakao.com/v2/maps/sdk.js?appkey=eb35eb3a356a7589f696a82e382206f1&libraries=services"></script>
 	<script>
-		//test11
+
 		//값받아서 찢아버리기
 		temp = location.href.split("?");
 
@@ -80,7 +80,7 @@
 		
 		// 마커를 담을 배열입니다
 		var markers = [];
-		//test22
+
 		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
 		mapOption = {
 			center : new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
