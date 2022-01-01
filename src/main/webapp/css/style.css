@@ -2,7 +2,7 @@
 
 /* 레이아웃 */
 #wrap {}
-#header { height: 50px;background: #fff; border-bottom:2px solid black}
+#header { height: 50px;border-bottom:2px solid black}
 #contents {}
 #footer {width: 100%;height: 200px;}
 
@@ -18,10 +18,12 @@
 
 /*헤더*/
 #header { position: sticky; top: 0; background: #fff; z-index: 2;}
-.header {line-height: 50px;}
-.header .header-logo {float: left; height: 50px; font-size: 25px;}
-.header .header-menu {float: right; height: 50px;}
-.header .header-menu a {color: #000; padding: 10px 0px 10px 13px;}
+.header {display: flex; justify-content: space-between; align-items: center; padding: 8px 12px;}
+.header .header-logo {font-size: 25px;}
+.header .header-logo i {}
+.header .header-select  {font-size: 25px; display: flex;}
+.header .header-menu {width: 148px; text-align: right;}
+.header .header-menu a {}
 
 /* 지도 */
 

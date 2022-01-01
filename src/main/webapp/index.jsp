@@ -16,27 +16,31 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script src="https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=0fe1da3ede2a77fb6b630f550f0c09ed"></script>
-
+    <!--외부 소스-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script><!-- 기억안남; -->
+    <script src="https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=0fe1da3ede2a77fb6b630f550f0c09ed"></script><!-- openweather-->
+	<script src="https://kit.fontawesome.com/f633810772.js" crossorigin="anonymous"></script><!-- 아이콘 -->
 </head>
 
 <body>
     <div id="wrap">
         <!-- header -->
         <div id="header">
-            <div class="container">
-                <div class="header">
+      		<!-- 플렉스박스 적용으로 container 삭제 -->
+                <nav class="header">
                     <div class="header-logo">
-                        <a id="logo">Viva La Trip testtest1122</a>
+                    	<i class="fab fa-apple"></i>
+                        <a id="logo" href="#">Viva La Trip</a>
                     </div>
+                    <ul class="header-select">
+                    	<li><a href="#">국내</a></li>
+                    	<li><a href="#">해외</a></li>
+                    </ul>
                     <div class="header-menu">
-                        <a>국내 /</a>
-                        <a>해외 일정 만들기</a>
                         <a href="login.jsp">로그인</a>
                     </div>
-                </div>
-            </div>
+                </nav>
+
         </div>
         <!-- //header -->
         <!-- contents -->
@@ -45,7 +49,7 @@
                 <div class="container">
                     <!-- 카카오맵 -->
                     <div class="map_wrap">
-                        <div id="kmap"></div>
+                        <div id = "kmap"></div>
                         <div class="hAddr">
                             <span class="title">지도중심기준 행정동 주소정보</span>
                             <span id="centerAddr"></span>
@@ -78,9 +82,7 @@
                                 if (status === kakao.maps.services.Status.OK) {
                                     
                                     var detailAddr = !!result[0].road_address ? '<div>도로명주소 : </div>' : '';
-                                    
-                                    
-                                    
+
                                     detailAddr += '<div>지번 주소 : ' + result[0].address_name + '</div>';
                                     
                                     var content = '<div class="bAddr">' +
