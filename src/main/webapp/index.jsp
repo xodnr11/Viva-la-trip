@@ -13,10 +13,14 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/><!-- 슬라이더배너 -->
     <!--외부 소스-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script><!-- 기억안남; -->
     <script src="https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=0fe1da3ede2a77fb6b630f550f0c09ed"></script><!-- openweather-->
 	<script src="https://kit.fontawesome.com/f633810772.js" crossorigin="anonymous"></script><!-- 아이콘 -->
+<!-- 슬라이더배너 -->
 </head>
 
 <body>
@@ -190,11 +194,25 @@
                         <div class="title">
                             <h2>Viva La Trip이 인정한 인기 여행지</h2>
                         </div>
-                        <ul>
+                        <div class="popular_li">
+                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지1"></a></div>
+                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지2"></a></div>
+                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지3"></a></div>
+                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지4"></a></div>
+                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지5"></a></div>
+                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지6"></a></div>
+                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지7"></a></div>
+                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지8"></a></div>
+                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지9"></a></div>
+                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지10"></a></div>
+                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지11"></a></div>
+                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지12"></a></div>
+                        </div>
+                        <!--<ul>
                             <li class="destination1"><img src="" alt="여행지1"></li>
                             <li class="destination2"><img src="" alt="여행지2"></li>
                             <li class="destination3"><img src="" alt="여행지3"></li>
-                        </ul>
+                        </ul>-->
                     </div>
                 </div>
             </div>
@@ -241,6 +259,9 @@
             </div>
         </div>
     </div>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script><!-- 슬라이더배너 -->
+	<script type="text/javascript" src="js/javascript.js"></script>
+    
 </body>
 
 </html>
