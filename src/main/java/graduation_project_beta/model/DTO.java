@@ -1,4 +1,4 @@
-package graduation_project_beta;
+package graduation_project_beta.model;
 
 public class DTO {
 	public DTO(int no, String id, String pw,String Date_of_birth,String Gender,String UserName) {

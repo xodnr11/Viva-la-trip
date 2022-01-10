@@ -1,7 +1,4 @@
 <%@page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<%@page import="graduation_project_beta.DTO"%>
-<%@page import="java.util.ArrayList"%>
-<%@page import="graduation_project_beta.DAO"%>
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -37,7 +34,7 @@
                     	<li><a href="#">해외</a></li>
                     </ul>
                     <div class="header-menu">
-                        <a href="login.jsp">로그인</a>
+                        <a onclick="location.href='login.do'">로그인</a>
                     </div>
                 </nav>
 

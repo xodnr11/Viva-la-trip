@@ -20,7 +20,7 @@
 		
 	
 
-    <form action="loginpro.jsp" method="post" class="loginForm">
+    <form action="loginpro.do" method="post" class="loginForm">
         <h2>Viva La Trip</h2>
         <div class="idForm">
             <input type="text" name= "id" class="id" placeholder="ID">
@@ -36,7 +36,7 @@
          
         
         <div class="bottomText">
-            아이디가 없다면? <a href="make_member_join.jsp">회원가입</a>
+            아이디가 없다면? <a onclick="location.href='make_member_join.do'">회원가입</a>
         </div>
        
     </form>

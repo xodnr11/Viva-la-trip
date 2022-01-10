@@ -1,4 +1,4 @@
-package graduation_project_beta;
+package graduation_project_beta.model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
