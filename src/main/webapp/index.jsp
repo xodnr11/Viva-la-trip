@@ -208,6 +208,10 @@
                             <div class="de_li"><a href="#"><img src="#" alt="인기 여행지11"></a></div>
                             <div class="de_li"><a href="#"><img src="#" alt="인기 여행지12"></a></div>
                         </div>
+                        <ul>
+        					<li class="prev-arrow"><i class="fas fa-chevron-left"></i></li>
+        					<li class="next-arrow"><i class="fas fa-chevron-right"></i></li>
+    					</ul>
                         <!--<ul>
                             <li class="destination1"><img src="" alt="여행지1"></li>
                             <li class="destination2"><img src="" alt="여행지2"></li>

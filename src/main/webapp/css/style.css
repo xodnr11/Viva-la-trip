@@ -34,10 +34,9 @@
 .cont_popular .title {text-align: center;  box-shadow: 0 0 0 2px #00f inset;}
 .cont_popular .title h2 {padding: 10px 0;}
 .cont_popular .popular_li {position: relative; padding: 24px 0 24px; box-shadow: 0 0 0 2px #00f inset;}
-.cont_popular .popular_li .de_li{width: 330px; height: 330px; box-shadow: 0 0 0 3px #000000 inset; margin: 35px;}
-
-.cont_popular .popular_li .slick-prev {position: absolute; left: -50px; top: 189px; transform: translate(0%, -50%); width: 43px; height: 43px; background: #ccc;  text-indent: -9999px;}
-.cont_popular .popular_li .slick-next {position: absolute; right: -50px; top: 189px; transform: translate(0%, -50%); width: 43px; height: 43px; background: #ccc; text-indent: -9999px;}
+.cont_popular .popular_li .de_li {width: 330px; height: 330px; box-shadow: 0 0 0 3px #000000 inset; margin: 35px;}
+.cont_popular .prev-arrow {position: absolute; left: -50px; top: 250px; transform: translate(0%, -50%);  font-size: 43px; text-align: center;}
+.cont_popular .next-arrow {position: absolute; right: -50px; top: 250px; transform: translate(0%, -50%);  font-size: 43px; text-align: center;}
 .cont_popular .popular_li .slick-slide {margin: 10px;}
 .cont_popular .popular_li .slick-dots {position: absolute; bottom: 0px; display: block; width: 100%; text-align: center;}
 .cont_popular .popular_li .slick-dots li {display: inline-block; width: 15px; height: 15px; margin: 5px;}

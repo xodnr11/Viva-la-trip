@@ -3,6 +3,9 @@ $(".popular_li").slick({
     slidesToShow: 3,
     slidesToScroll: 3,
     autoplay: true,
-    autoplaySpeed: 10000,
-    dots: true
+    autoplaySpeed: 7000,
+    dots: true,
+    prevArrow: $('.prev-arrow'),
+    nextArrow: $('.next-arrow')
+
 });
