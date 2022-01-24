@@ -1,0 +1,136 @@
+@charset "utf-8";
+ *{
+ font-family: AppleSDGothicNeoM00,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; 
+    color: #222; line-height: 1.5;
+}
+/*페이지 전체 크기*/
+.menucontainer{ 
+	display:flex;
+	width: 1200px;
+	margin: 0 auto;
+	height: inherit;
+}
+
+/*다른사람의 여행일정 타이틀*/
+.other_plan{
+	width:100vh;
+	height:20px;
+	font-size:25px;
+	position:relative;
+	left:675px;
+	top:25px;
+}
+
+/*좌측메뉴박스 설정*/
+.menu_box{
+	display:flex;
+	width:100;
+	height:60%;
+	font-size:15px;
+	float:left;
+    flex-direction:column;
+	margin:100px 50px;
+	border:2px solid black;
+	position:fixed;
+}
+
+/*국내 해외*/
+#citytitle{
+	color:black;
+	font-size:25px;
+    text-align:center;
+}
+
+/*메뉴박스 중 도시 이름*/
+.menu_box .city{
+	display:flex;
+	justify-content:center;
+	align-content:center;
+	/*도시이름 중앙정렬*/
+}
+/*국내 해외간 간격 빈박스*/
+#space{
+	display:flex;
+	margin:10px 10px;
+}
+
+/*일정 항목 컨테이너*/
+.plancontainer{
+	display:flex;
+	width:500px;
+	height:170px;
+	position:absolute;
+	/*border:2px solid black;*/
+	justify-content:space-between;
+
+	box-shadow:5px 5px 5px 5px gray;
+}
+
+.plancontainer .plantitle{
+	justify-content:flex-start;
+}
+
+.plancontainer .planinfo{
+	display:flex;
+    width:500px;
+    height:130px;
+	flex-direction:column;
+	padding-left:100px;
+
+}
+.plancontainer .planinfo2{
+	font-size:15px;
+	/*글씨체 굵게하기*/
+	padding-left:70px;
+	padding-top:5px;
+}
+.plancontainer #citytitle{
+	padding-left:70px;
+}
+
+/*icon설정*/
+.plancontainer .planicon{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:flex-end;
+	align-items:center;
+	align-content:flex-end;
+	margin-top:50px;
+	margin-right:8px;
+}
+
+.plancontainer .planzzim{
+	position:absolute;
+	left:91%;
+	color:pink;
+	
+}
+
+.plancontainer .planzzim:active{
+	position:absolute;
+	left:90%;
+	color:red;
+}
+i{
+	width:10px;
+	height:10px;
+	padding : 6px 8px;
+}
+img{
+	position:absolute;
+	width:30%;
+	height:75%;
+}
+#plancomment{
+	position:absolute;
+    width:500px;
+    height:33px;
+    float:left;
+    
+    font-size:15px;
+	/*위 양옆*/
+	margin:135px -2px;
+	border:2px solid gray;
+	
+}

@@ -220,11 +220,12 @@
                     </div>
                 </div>
             </div>
-            <div id="cont_others">
+            <div id="cont_others"> <!-- 더보기 토글 -->
                 <div class="container">
                     <div class="cont_others">
                         <div class="title">
                             <h2>다른 사람들의 일정 목록</h2>
+                            <a id="other_list" href="#">더 찾아보기</a>
                         </div>
                         <ul>
                             <li class="destination1">
@@ -252,6 +253,135 @@
                                 <div class="description">일정 정보</div>
                             </li>
                         </ul>
+                        <div class="second_pop">
+                            <ul class="more">
+                                <li class="destination1">
+                                    <img src="" alt="여행지1">
+                                    <div class="description">일정 정보</div>
+                                </li>
+                                <li class="destination2">
+                                    <img src="" alt="여행지2">
+                                    <div class="description">일정 정보</div>
+                                </li>
+                                <li class="destination3">
+                                    <img src="" alt="여행지3">
+                                    <div class="description">일정 정보</div>
+                                </li>
+                                <li class="destination4">
+                                    <img src="" alt="여행지4">
+                                    <div class="description">일정 정보</div>
+                                </li>
+                                <li class="destination5">
+                                    <img src="" alt="여행지5">
+                                    <div class="description">일정 정보</div>
+                                </li>
+                                <li class="destination6">
+                                    <img src="" alt="여행지6">
+                                    <div class="description">일정 정보</div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <button id="btnMore">더보기</button>
+                    </div>
+                </div>
+            </div>
+            <div id="cont_others"> <!-- 박스 수를 미리 정하고 버튼으로 순서대로 로드 -->
+                <div class="container">
+                    <div class="cont_others">
+                        <div class="title">
+                            <h2>다른 사람들의 일정 목록</h2>
+                            <a id="other_list" href="#">더 찾아보기</a>
+                        </div>
+                        <ul id="des_li">
+                            <li class="des">
+                                <img src="" alt="여행지1">
+                                <div class="description">일정 정보</div>
+                            </li>
+                            <li class="des">
+                                <img src="" alt="여행지2">
+                                <div class="description">일정 정보</div>
+                            </li>
+                            <li class="des">
+                                <img src="" alt="여행지3">
+                                <div class="description">일정 정보</div>
+                            </li>
+                            <li class="des">
+                                <img src="" alt="여행지4">
+                                <div class="description">일정 정보</div>
+                            </li>
+                            <li class="des">
+                                <img src="" alt="여행지5">
+                                <div class="description">일정 정보</div>
+                            </li>
+                            <li class="des">
+                                <img src="" alt="여행지6">
+                                <div class="description">일정 정보</div>
+                            </li>
+                            <li class="des">
+                                <img src="" alt="여행지1">
+                                <div class="description">일정 정보</div>
+                            </li>
+                            <li class="des">
+                                <img src="" alt="여행지2">
+                                <div class="description">일정 정보</div>
+                            </li>
+                            <li class="des">
+                                <img src="" alt="여행지3">
+                                <div class="description">일정 정보</div>
+                            </li>
+                            <li class="des">
+                                <img src="" alt="여행지4">
+                                <div class="description">일정 정보</div>
+                            </li>
+                            <li class="des">
+                                <img src="" alt="여행지5">
+                                <div class="description">일정 정보</div>
+                            </li>
+                            <li class="des">
+                                <img src="" alt="여행지6">
+                                <div class="description">일정 정보</div>
+                            </li>
+                            <li class="des">
+                                <img src="" alt="여행지1">
+                                <div class="description">일정 정보</div>
+                            </li>
+                            <li class="des">
+                                <img src="" alt="여행지2">
+                                <div class="description">일정 정보</div>
+                            </li>
+                            <li class="des">
+                                <img src="" alt="여행지3">
+                                <div class="description">일정 정보</div>
+                            </li>
+                            <li class="des">
+                                <img src="" alt="여행지4">
+                                <div class="description">일정 정보</div>
+                            </li>
+                            <li class="des">
+                                <img src="" alt="여행지5">
+                                <div class="description">일정 정보</div>
+                            </li>
+                            <li class="des">
+                                <img src="" alt="여행지6">
+                                <div class="description">일정 정보</div>
+                            </li>
+                        </ul>
+                        <button id="btnLoadMore">더보기</button>
+
+                    </div>
+                </div>
+            </div>
+            <div id="cont_others"> <!-- 박스 동적 생성 -->
+                <div class="container">
+                    <div class="cont_others">
+                        <div class="title">
+                            <h2>다른 사람들의 일정 목록</h2>
+                            <a id="other_list" href="#">더 찾아보기</a>
+                        </div>
+                        <ul id="others_list"></ul>
+                        <button id="btnLoadIntinity">더보기</button>
+
                     </div>
                 </div>
             </div>
@@ -265,7 +395,7 @@
     </div>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script><!-- 슬라이더배너 -->
 	<script type="text/javascript" src="js/javascript.js"></script>
-    
+   
 </body>
 
 </html>

@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
-body { background: #34495e; } 
+body {background: #f8f9fa;} 
 
-.loginForm { position:absolute; width:300px; height:400px; padding: 30px, 20px; background-color:#FFFFFF; 
-    text-align:center; top:50%; left:50%; transform: translate(-50%,-50%); border-radius: 15px; } 
-.loginForm h2 { text-align: center; margin: 30px; } 
+#login_box {position:absolute; top:50%; left:50%; transform: translate(-50%,-50%); text-align:center; }
+#login_box h2 {margin: 20px; font-size: 40px;}
+
+.loginForm {width:600px; height:334px; padding: 20px; background-color:#FFF; border-radius: 10px;}
 
 .idForm { border-bottom: 2px solid #adadad; margin: 30px; padding: 10px 10px; } 
 .passForm { border-bottom: 2px solid #adadad; margin: 30px; padding: 10px 10px; } 
@@ -12,8 +13,7 @@ body { background: #34495e; }
 .id { width: 100%; border:none; outline:none; color: #636e72; font-size:16px; height:25px; background: none; } 
 .pw { width: 100%; border:none; outline:none; color: #636e72; font-size:16px; height:25px; background: none; } 
 
-.btn { position:relative; left:40%; transform: translateX(-50%); margin-bottom: 40px; width:80%; height:40px;
-    background: linear-gradient(125deg,#81ecec,#6c5ce7,#81ecec); background-position: left; 
-    background-size: 200%; color:white; font-weight: bold; border:none; cursor:pointer; transition: 0.4s; display:inline; } 
-.btn:hover { background-position: right; } 
+.btn_login {margin-bottom: 40px; height:40px; width: 90%; background: linear-gradient(125deg,#81ecec,#6c5ce7,#81ecec); background-position: left; 
+    background-size: 200%; color:white; font-weight: bold; cursor:pointer; transition: 0.4s; display:inline; } 
+.btn_login:hover { background-position: right; } 
 .bottomText { text-align: center; } 
