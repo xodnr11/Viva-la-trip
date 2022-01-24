@@ -1,136 +1,40 @@
 @charset "utf-8";
- *{
- font-family: AppleSDGothicNeoM00,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; 
-    color: #222; line-height: 1.5;
-}
-/*페이지 전체 크기*/
-.menucontainer{ 
-	display:flex;
-	width: 1200px;
-	margin: 0 auto;
-	height: inherit;
-}
+
+#wrap {background-color: #f8f9fa;}
+
+#header {}
+#contents {width: 1200px; margin: 0 auto;}
+#footer {}
 
 /*다른사람의 여행일정 타이틀*/
-.other_plan{
-	width:100vh;
-	height:20px;
-	font-size:25px;
-	position:relative;
-	left:675px;
-	top:25px;
-}
+#cont_title {border-bottom: 1px rgb(88, 88, 88) solid; position: relative;}
+#cont_title .major_title {height: 200px; font-size:50px; display: flex; align-items: center; justify-content: center;}
+#cont_title .list_order {position: absolute; bottom: 5px; right: 5px; box-shadow: 0 0 0 1px rgb(6, 214, 23) inset;}
 
-/*좌측메뉴박스 설정*/
-.menu_box{
-	display:flex;
-	width:100;
-	height:60%;
-	font-size:15px;
-	float:left;
-    flex-direction:column;
-	margin:100px 50px;
-	border:2px solid black;
-	position:fixed;
-}
 
-/*국내 해외*/
-#citytitle{
-	color:black;
-	font-size:25px;
-    text-align:center;
-}
+#cont_main {display: flex;}
 
-/*메뉴박스 중 도시 이름*/
-.menu_box .city{
-	display:flex;
-	justify-content:center;
-	align-content:center;
-	/*도시이름 중앙정렬*/
-}
-/*국내 해외간 간격 빈박스*/
-#space{
-	display:flex;
-	margin:10px 10px;
-}
+#cont_aside {width: 100px;}
+#cont_aside .menu_box {margin: 8px; position: sticky; top: 10%; left: 0;}
+#cont_aside .menu_box .city_korea {margin-bottom: 10px;}
+#cont_aside .menu_box .city_abroad {}
 
-/*일정 항목 컨테이너*/
-.plancontainer{
-	display:flex;
-	width:500px;
-	height:170px;
-	position:absolute;
-	/*border:2px solid black;*/
-	justify-content:space-between;
+#cont_aside .menu_box .city_title {font-size: 23px; font-weight: bold;}
+#cont_aside .menu_box .city_list li {height: 23px;}
+#cont_aside .menu_box .city_list a {color: rgb(99, 99, 99); font-size: 15px;}
 
-	box-shadow:5px 5px 5px 5px gray;
-}
+* {box-sizing: border-box;}
 
-.plancontainer .plantitle{
-	justify-content:flex-start;
-}
+#cont_others_list {width: 1100px;}
+#cont_others_list .plan_container {float: left; width: 500px; height: 200px; padding: 5px; margin: 25px 0 25px 50px; background-color: #fff;}
+#cont_others_list .plan_container hr {margin: 5px 0 0 0;}
 
-.plancontainer .planinfo{
-	display:flex;
-    width:500px;
-    height:130px;
-	flex-direction:column;
-	padding-left:100px;
+#cont_others_list .plan_contents {display: flex;}
 
-}
-.plancontainer .planinfo2{
-	font-size:15px;
-	/*글씨체 굵게하기*/
-	padding-left:70px;
-	padding-top:5px;
-}
-.plancontainer #citytitle{
-	padding-left:70px;
-}
-
-/*icon설정*/
-.plancontainer .planicon{
-	display:flex;
-	flex-direction:row;
-	flex-wrap:nowrap;
-	justify-content:flex-end;
-	align-items:center;
-	align-content:flex-end;
-	margin-top:50px;
-	margin-right:8px;
-}
-
-.plancontainer .planzzim{
-	position:absolute;
-	left:91%;
-	color:pink;
-	
-}
-
-.plancontainer .planzzim:active{
-	position:absolute;
-	left:90%;
-	color:red;
-}
-i{
-	width:10px;
-	height:10px;
-	padding : 6px 8px;
-}
-img{
-	position:absolute;
-	width:30%;
-	height:75%;
-}
-#plancomment{
-	position:absolute;
-    width:500px;
-    height:33px;
-    float:left;
-    
-    font-size:15px;
-	/*위 양옆*/
-	margin:135px -2px;
-	border:2px solid gray;
-	
-}
+#cont_others_list .plan_container .plan_img {}
+#cont_others_list .plan_container .plan_img img {height: 140px; width: 140px; background-size: cover; background-position: center; background-repeat: no-repeat;}
+#cont_others_list .plan_container .plan_info {position: relative; padding: 10px;flex-grow: 1; font-size: 18px;}
+#cont_others_list .plan_container .plan_info #info_title {font-size: 25px; font-weight: bold;}
+#cont_others_list .plan_container .plan_info .plan_like {position: absolute; right: 5px; top: 5px;}
+#cont_others_list .plan_container .plan_info .plan_icon {position: absolute; right: 5px; bottom: 5px;}
+#cont_others_list .plan_container .plan_comment {}
