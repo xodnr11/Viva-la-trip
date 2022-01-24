@@ -225,7 +225,7 @@
                     <div class="cont_others">
                         <div class="title">
                             <h2>다른 사람들의 일정 목록</h2>
-                            <a id="other_list" href="#">더 찾아보기</a>
+                            <a id="other_list" href="other_plan.jsp">더 찾아보기</a>
                         </div>
                         <ul>
                             <li class="destination1">
@@ -291,7 +291,7 @@
                     <div class="cont_others">
                         <div class="title">
                             <h2>다른 사람들의 일정 목록</h2>
-                            <a id="other_list" href="#">더 찾아보기</a>
+                            <a id="other_list" href="other_plan.jsp">더 찾아보기</a>
                         </div>
                         <ul id="des_li">
                             <li class="des">
@@ -377,7 +377,7 @@
                     <div class="cont_others">
                         <div class="title">
                             <h2>다른 사람들의 일정 목록</h2>
-                            <a id="other_list" href="#">더 찾아보기</a>
+                            <a id="other_list" href="other_plan.jsp">더 찾아보기</a>
                         </div>
                         <ul id="others_list"></ul>
                         <button id="btnLoadIntinity">더보기</button>
