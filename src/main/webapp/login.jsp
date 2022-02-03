@@ -35,7 +35,7 @@
             </button>
     
             <div class="bottomText">
-                아이디가 없다면? <a href="make_member_join">회원가입</a>
+                아이디가 없다면? <a href="sign_up">회원가입</a>
             </div>
         </form>
         

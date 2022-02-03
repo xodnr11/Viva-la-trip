@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+body {background: #f8f9fa;} 
+
+#sign_up_box {position:absolute; top:45%; left:50%; transform: translate(-50%,-50%); text-align:center; }
+#sign_up_box h2 {margin: 20px; font-size: 40px;}
+
+.sign_up_form {width:600px; padding: 20px; background-color:#FFF; border-radius: 10px;}
+
+.user_form { border-bottom: 2px solid #adadad; margin: 30px; padding: 10px 10px; }
+ 
+.username { width: 100%; border:none; outline:none; color: #636e72; font-size:16px; height:25px; background: none; } 
+.id { width: 100%; border:none; outline:none; color: #636e72; font-size:16px; height:25px; background: none; } 
+.pw { width: 100%; border:none; outline:none; color: #636e72; font-size:16px; height:25px; background: none; } 
+
+.accept_box {display: flex; align-items: center; justify-content: center; margin: 20px;}
+.accept_box #accept {margin-right: 5px;}
+
+.btn_sign_up {margin-bottom: 40px; height:40px; width: 90%; background: linear-gradient(125deg,#81ecec,#6c5ce7,#81ecec); background-position: left; 
+    background-size: 200%; color:white; font-weight: bold; cursor:pointer; transition: 0.4s; display:inline; } 
+.btn_sign_up:hover { background-position: right; } 

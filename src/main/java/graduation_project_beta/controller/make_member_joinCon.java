@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/make_member_join/*")
+@WebServlet("/sign_up/*")
 public class make_member_joinCon extends HttpServlet{
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		reqPro(request ,response);
@@ -20,7 +20,7 @@ public class make_member_joinCon extends HttpServlet{
 	}
 	
 	protected void reqPro(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {	
-		RequestDispatcher dis = request.getRequestDispatcher("make_member_join.jsp");
+		RequestDispatcher dis = request.getRequestDispatcher("sign_up.jsp");
 		dis.forward(request, response);
 	}
 }
