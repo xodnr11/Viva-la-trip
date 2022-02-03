@@ -15,7 +15,7 @@ public class make_my_planCon extends HttpServlet{
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		reqPro(request ,response);
 		System.out.println("doget");
-		System.out.println("¼ºÇö");
+		System.out.println("ì„±í˜„");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -44,7 +44,7 @@ public class make_my_planCon extends HttpServlet{
 			check = -2;
 		}
 		
-		System.out.println("ÀÌÇÁ¹Û");
+		System.out.println("ì´í”„ë°–");
 		
 		int public_ = 0;
 		String plan_comment = "";
@@ -52,7 +52,7 @@ public class make_my_planCon extends HttpServlet{
 		
 		if(check == -1) {
 			instance.set_plan(id,public_, start_date, end_date, area, places,places_count, info_title,plan_comment,plan_liked);
-			System.out.println("È¤½ÃµÎ¹ø?");
+			System.out.println("í˜¹ì‹œ ë‘ë²ˆ?");
 		}
 		request.setAttribute("id", id);
 		RequestDispatcher dis = request.getRequestDispatcher("index.jsp");
