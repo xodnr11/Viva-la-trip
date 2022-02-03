@@ -15,6 +15,7 @@ public class make_my_planCon extends HttpServlet{
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		reqPro(request ,response);
 		System.out.println("doget");
+		System.out.println("¼ºÇö");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
