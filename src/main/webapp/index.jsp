@@ -34,11 +34,11 @@
                     	<i class="fab fa-apple"></i>
                         <a id="logo" href="<%=request.getContextPath()%>/">Viva La Trip</a>
                     </div>
-                    <ul class="header-select">
+                    <ul class="header_select">
                     	<li><a href="#">국내</a></li>
                     	<li><a href="#">해외</a></li>
                     </ul>
-                    <div class="header-menu">
+                    <div class="header_menu">
                     	<c:set var="id_"  value="${id }" />
                         <a href="my_plan.do?id=${id }">내일정</a>
                         <a href="login">로그인</a>
@@ -226,165 +226,163 @@
                 <div class="container">
                     <div class="cont_public">
                         <div class="cont_public_title">
-                            <h2>다른 사람들의 일정 목록</h2>
-                            <a id="go_public_plan_list" href="other_plan.jsp">더 찾아보기</a>
-                            <h2>다른 사람들의 여행 일정</h2>
-                            <a id="other_list" href="public_plan?id=${id_ }">더 찾아보기</a>
+                        	<h2>다른 사람들의 여행 일정</h2>
+                            <a id="go_public_plan_list" href="public_plan?id=${id_ }">더 찾아보기</a>
                         </div>
-                        <ul>
-                            <li class="destination1"> <!-- plan_info -->
+                        <ul id="first_pop">
+                            <li class="area_container">
                                 <img src="" alt="여행지1">
-                                <div class="description">일정 정보</div> <!-- plan_info -->
+                                <div class="plan_info">일정 정보</div>
                             </li>
-                            <li class="destination2">
-                                <img src="" alt="여행지2">
-                                <div class="description">일정 정보</div>
+                            <li class="area_container">
+                                <img src="" alt="여행지1">
+                                <div class="plan_info">일정 정보</div>
                             </li>
-                            <li class="destination3">
-                                <img src="" alt="여행지3">
-                                <div class="description">일정 정보</div>
+                            <li class="area_container">
+                                <img src="" alt="여행지1">
+                                <div class="plan_info">일정 정보</div>
                             </li>
-                            <li class="destination4">
-                                <img src="" alt="여행지4">
-                                <div class="description">일정 정보</div>
+                            <li class="area_container">
+                                <img src="" alt="여행지1">
+                                <div class="plan_info">일정 정보</div>
                             </li>
-                            <li class="destination5">
-                                <img src="" alt="여행지5">
-                                <div class="description">일정 정보</div>
+                            <li class="area_container">
+                                <img src="" alt="여행지1">
+                                <div class="plan_info">일정 정보</div>
                             </li>
-                            <li class="destination6">
-                                <img src="" alt="여행지6">
-                                <div class="description">일정 정보</div>
+                            <li class="area_container">
+                                <img src="" alt="여행지1">
+                                <div class="plan_info">일정 정보</div>
                             </li>
                         </ul>
-                        <div class="second_pop">
+                        <div id="second_pop">
                             <ul class="more">
-                                <li class="destination1">
-                                    <img src="" alt="여행지1">
-                                    <div class="description">일정 정보</div>
-                                </li>
-                                <li class="destination2">
-                                    <img src="" alt="여행지2">
-                                    <div class="description">일정 정보</div>
-                                </li>
-                                <li class="destination3">
-                                    <img src="" alt="여행지3">
-                                    <div class="description">일정 정보</div>
-                                </li>
-                                <li class="destination4">
-                                    <img src="" alt="여행지4">
-                                    <div class="description">일정 정보</div>
-                                </li>
-                                <li class="destination5">
-                                    <img src="" alt="여행지5">
-                                    <div class="description">일정 정보</div>
-                                </li>
-                                <li class="destination6">
-                                    <img src="" alt="여행지6">
-                                    <div class="description">일정 정보</div>
-                                </li>
+                                <li class="area_container">
+                                <img src="" alt="여행지1">
+                                <div class="plan_info">일정 정보</div>
+                            	</li>
+                            	<li class="area_container">
+                                	<img src="" alt="여행지1">
+                                	<div class="plan_info">일정 정보</div>
+                            	</li>
+                            	<li class="area_container">
+                            	    <img src="" alt="여행지1">
+                            	    <div class="plan_info">일정 정보</div>
+                            	</li>
+                            	<li class="area_container">
+                            	    <img src="" alt="여행지1">
+                            	    <div class="plan_info">일정 정보</div>
+                            	</li>
+                            	<li class="area_container">
+                            	    <img src="" alt="여행지1">
+                            	    <div class="plan_info">일정 정보</div>
+                            	</li>
+                            	<li class="area_container">
+                            	    <img src="" alt="여행지1">
+                            	    <div class="plan_info">일정 정보</div>
+                            	</li>
                             </ul>
                         </div>
                         
-                        <button id="btnMore">더보기</button>
+                        <button id="btn_pop">더보기</button>
                     </div>
                 </div>
             </div>
-            <div id="cont_others"> <!-- 박스 수를 미리 정하고 버튼으로 순서대로 로드 -->
+            <div id="cont_public"> <!-- 박스 수를 미리 정하고 버튼으로 순서대로 로드 -->
                 <div class="container">
-                    <div class="cont_others">
-                        <div class="title">
+                    <div class="cont_public">
+                        <div class="cont_public_title">
                             <h2>다른 사람들의 일정 목록</h2>
-                            <a id="other_list" href="public_plan?id=${id_ }">더 찾아보기</a>
+                            <a id="go_public_plan_list" href="public_plan?id=${id_ }">더 찾아보기</a>
                         </div>
                         <ul id="des_li">
                             <li class="des">
                                 <img src="" alt="여행지1">
-                                <div class="description">일정 정보</div>
+                                <div class="plan_info">일정 정보</div>
                             </li>
                             <li class="des">
                                 <img src="" alt="여행지2">
-                                <div class="description">일정 정보</div>
+                                <div class="plan_info">일정 정보</div>
                             </li>
                             <li class="des">
                                 <img src="" alt="여행지3">
-                                <div class="description">일정 정보</div>
+                                <div class="plan_info">일정 정보</div>
                             </li>
                             <li class="des">
                                 <img src="" alt="여행지4">
-                                <div class="description">일정 정보</div>
+                                <div class="plan_info">일정 정보</div>
                             </li>
                             <li class="des">
                                 <img src="" alt="여행지5">
-                                <div class="description">일정 정보</div>
+                                <div class="plan_info">일정 정보</div>
                             </li>
                             <li class="des">
                                 <img src="" alt="여행지6">
-                                <div class="description">일정 정보</div>
+                                <div class="plan_info">일정 정보</div>
                             </li>
                             <li class="des">
                                 <img src="" alt="여행지1">
-                                <div class="description">일정 정보</div>
+                                <div class="plan_info">일정 정보</div>
                             </li>
                             <li class="des">
                                 <img src="" alt="여행지2">
-                                <div class="description">일정 정보</div>
+                                <div class="plan_info">일정 정보</div>
                             </li>
                             <li class="des">
                                 <img src="" alt="여행지3">
-                                <div class="description">일정 정보</div>
+                                <div class="plan_info">일정 정보</div>
                             </li>
                             <li class="des">
                                 <img src="" alt="여행지4">
-                                <div class="description">일정 정보</div>
+                                <div class="plan_info">일정 정보</div>
                             </li>
                             <li class="des">
                                 <img src="" alt="여행지5">
-                                <div class="description">일정 정보</div>
+                                <div class="plan_info">일정 정보</div>
                             </li>
                             <li class="des">
                                 <img src="" alt="여행지6">
-                                <div class="description">일정 정보</div>
+                                <div class="plan_info">일정 정보</div>
                             </li>
                             <li class="des">
                                 <img src="" alt="여행지1">
-                                <div class="description">일정 정보</div>
+                                <div class="plan_info">일정 정보</div>
                             </li>
                             <li class="des">
                                 <img src="" alt="여행지2">
-                                <div class="description">일정 정보</div>
+                                <div class="plan_info">일정 정보</div>
                             </li>
                             <li class="des">
                                 <img src="" alt="여행지3">
-                                <div class="description">일정 정보</div>
+                                <div class="plan_info">일정 정보</div>
                             </li>
                             <li class="des">
                                 <img src="" alt="여행지4">
-                                <div class="description">일정 정보</div>
+                                <div class="plan_info">일정 정보</div>
                             </li>
                             <li class="des">
                                 <img src="" alt="여행지5">
-                                <div class="description">일정 정보</div>
+                                <div class="plan_info">일정 정보</div>
                             </li>
                             <li class="des">
                                 <img src="" alt="여행지6">
-                                <div class="description">일정 정보</div>
+                                <div class="plan_info">일정 정보</div>
                             </li>
                         </ul>
-                        <button id="btnLoadMore">더보기</button>
+                        <button id="btn_load_more">더보기</button>
 
                     </div>
                 </div>
             </div>
-            <div id="cont_others"> <!-- 박스 동적 생성 -->
+            <div id="cont_public"> <!-- 박스 동적 생성 -->
                 <div class="container">
-                    <div class="cont_others">
-                        <div class="title">
+                    <div class="cont_public">
+                        <div class="cont_public_title">
                             <h2>다른 사람들의 일정 목록</h2>
-                            <a id="other_list" href="public_plan?id=${id_ }">더 찾아보기</a>
+                            <a id="go_public_plan_list" href="public_plan?id=${id_ }">더 찾아보기</a>
                         </div>
-                        <ul id="others_list"></ul>
-                        <button id="btnLoadIntinity">더보기</button>
+                        <ul id="public_list"></ul>
+                        <button id="btn_load_intinity">더보기</button>
 
                     </div>
                 </div>
