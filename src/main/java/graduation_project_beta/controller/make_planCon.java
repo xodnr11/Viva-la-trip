@@ -1,7 +1,6 @@
 package graduation_project_beta.controller;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -22,8 +21,6 @@ public class make_planCon extends HttpServlet{
 		String area = request.getParameter("area");
 		String id = request.getParameter("id");
 		
-		System.out.println(area);
-		System.out.println(id);
 		request.setAttribute("selected_area_", area);
 		request.setAttribute("id", id);
 		RequestDispatcher dis = request.getRequestDispatcher("make_plan.jsp");

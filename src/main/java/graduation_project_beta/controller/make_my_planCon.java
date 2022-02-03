@@ -10,16 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import graduation_project_beta.model.plan_DAO;
-import graduation_project_beta.model.user_schedule_DAO;
-
-@WebServlet("/make_my_plan/*")
+@WebServlet("/make_my_plan.do")
 public class make_my_planCon extends HttpServlet{
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		reqPro(request ,response);
+		System.out.println("doget");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		reqPro(request ,response);
+		System.out.println("dopost");
 	}
 	protected void reqPro(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {	
 		int check = -1;
@@ -43,13 +43,15 @@ public class make_my_planCon extends HttpServlet{
 			check = -2;
 		}
 		
+		System.out.println("이프밖");
+		
 		int public_ = 0;
 		String plan_comment = "";
 		int plan_liked = 0;
 		
 		if(check == -1) {
 			instance.set_plan(id,public_, start_date, end_date, area, places,places_count, info_title,plan_comment,plan_liked);
-			
+			System.out.println("혹시두번?");
 		}
 		request.setAttribute("id", id);
 		RequestDispatcher dis = request.getRequestDispatcher("index.jsp");

@@ -332,7 +332,7 @@
 			}
 		}
 	</script>
-	<form action="make_my_plan">
+	<form action="make_my_plan.do">
 		<table border="1">
 			<tr>
 				<td>아이디</td>
