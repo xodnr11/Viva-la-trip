@@ -34,7 +34,7 @@
 .cont_popular .title {text-align: center;  /*box-shadow: 0 0 0 2px #00f inset;*/}
 .cont_popular .title h2 {padding: 10px 0;}
 .cont_popular .popular_list {position: relative; padding: 24px 0 24px; /*box-shadow: 0 0 0 2px #00f inset;*/}
-.cont_popular .popular_list .area_li {width: 330px; height: 330px; box-shadow: 0 0 0 3px #000000 inset; margin: 35px;}
+.cont_popular .popular_list .area_li {width: 330px; height: 330px; box-shadow: 0 0 0 3px #000000 inset; margin: 35px; display: flex; align-items: center; justify-content: center;}
 .cont_popular .prev_arrow {position: absolute; left: -50px; top: 50%; transform: translate(0%, 0%);  font-size: 43px; text-align: center;}
 .cont_popular .next_arrow {position: absolute; right: -50px; top: 50%; transform: translate(0%, 0%);  font-size: 43px; text-align: center;}
 .cont_popular .popular_list .slick-slide {margin: 10px;}

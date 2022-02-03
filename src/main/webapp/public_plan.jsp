@@ -34,7 +34,7 @@
                     <a id="logo" href="<%=request.getContextPath()%>/">Viva La Trip</a>
                 </div>
                 <div class="header_menu">
-                    <a href="my_plan">내일정</a>
+                    <a href="my_plan.do?id=${id }">내일정</a>
                     <a href="login">로그인</a>
                     <c:set var="id_"  value="${id }" />
                        <c:if test="${not empty id_}">

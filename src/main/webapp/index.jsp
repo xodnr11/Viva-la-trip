@@ -202,7 +202,7 @@
                             <h2>Viva La Trip이 인정한 인기 여행지</h2>
                         </div>
                         <div class="popular_list">
-                            <div class="area_li"><a href="#"><img src="#" alt="인기 여행지1"></a></div>
+                            <div class="area_li"><a href="#"><img src="#" onerror="this.src='media/loading.gif'" alt="인기 여행지1"></a></div>
                             <div class="area_li"><a href="#"><img src="#" alt="인기 여행지2"></a></div>
                             <div class="area_li"><a href="#"><img src="#" alt="인기 여행지3"></a></div>
                             <div class="area_li"><a href="#"><img src="#" alt="인기 여행지4"></a></div>
