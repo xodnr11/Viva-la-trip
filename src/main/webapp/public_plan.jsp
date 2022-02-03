@@ -14,7 +14,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/other_plan.css">
+    <link rel="stylesheet" href="css/public_plan.css">
 
     <!--외부 소스-->
 
@@ -29,11 +29,11 @@
         <div id="header">
             <!-- 플렉스박스 적용으로 container 삭제 -->
             <nav class="header">
-                <div class="header-logo">
+                <div class="header_logo">
                     <i class="fab fa-apple"></i>
-                    <a id="logo" href="index">Viva La Trip</a>
+                    <a id="logo" href="<%=request.getContextPath()%>/">Viva La Trip</a>
                 </div>
-                <div class="header-menu">
+                <div class="header_menu">
                     <a href="my_plan">내일정</a>
                     <a href="login">로그인</a>
                     <c:set var="id_"  value="${id }" />
@@ -98,8 +98,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- cont_others_list -->
-                <div id="cont_others_list">
+                <!-- cont_public_plan -->
+                <div id="cont_public_plan">
 					
                 </div>
             </div>
@@ -110,51 +110,31 @@
             </div>
         </div>
     </div>
-    
-   	<!-- <div class="plan_contents">
-						<div class="plan_img">
-							<img src="img.webp" href(unknown)>
-						</div>
-						<div>
-							<ul>
-								<li>
-									
-								</li>
-								<li></li>
-								<li></li>
-								<li></li>
-							</ul>
-							<div></div>
-							<div></div>
-						</div>
-					</div> -->
-    
     <script>
-	
-    function make_plan_con() {
-        cont_others_list = document.getElementById('cont_others_list');
+    	function make_plan_con() {
+    		cont_public_plan = document.getElementById('cont_public_plan');
 		
-        //var id = '${id}';
-        '<c:forEach var="arraylist_plan_public" items="${arraylist_plan_public }">'
-        plan_con = document.createElement('div');
-        plan_con.setAttribute("class","plan_container");
-        plan_con.innerHTML = '<div class="plan_contents">' 
-        +'<div class="plan_img">'
-            +'<img src="img1.webp" href=""></img></div>'
-        +'<div class="plan_info">'
-            +'<ul><li><a href="" id="info_title"><c:out value="${arraylist_plan_public.info_title }"></c:out></a></li>'
-                +'<li class="info_date"><c:out value="${arraylist_plan_public.start_date }"></c:out>~<c:out value="${arraylist_plan_public.end_date }"></c:out></li>'
-                +'<li class="info_name"><c:out value="${arraylist_plan_public.id }"></c:out></li>'
-                +'<li class="info_selected"><c:out value="${arraylist_plan_public.places_count }"></c:out></li></ul>'
-            +'<div class="plan_like"><a href=""><i class="far fa-heart"></i></a></div>'
-            +'<div class="plan_icon">'
-                +'<a href=""><i class="far fa-share-square"></i></a>&nbsp;'
-                +'<a href=""><i class="far fa-edit"></i></a>&nbsp;'
-                +'<a href=""><i class="far fa-trash-alt"></i></a></div></div></div>'
-        +'<hr><div class="plan_comment"><c:out value="${arraylist_plan_public.plan_comment }"></c:out></div>';
-        cont_others_list.append(plan_con);
-        '</c:forEach>'
-    }
+        	//var id = '${id}';
+        	'<c:forEach var="arraylist_plan_public" items="${arraylist_plan_public }">'
+        	plan_con = document.createElement('div');
+        	plan_con.setAttribute("class","plan_container");
+        	plan_con.innerHTML = '<div class="plan_contents">' 
+        	+'<div class="plan_img">'
+        	    +'<img src="img1.webp" href=""></img></div>'
+        	+'<div class="plan_info">'
+        	    +'<ul><li><a href="" id="info_title"><c:out value="${arraylist_plan_public.info_title }"></c:out></a></li>'
+        	        +'<li class="info_date"><c:out value="${arraylist_plan_public.start_date }"></c:out>~<c:out value="${arraylist_plan_public.end_date }"></c:out></li>'
+        	        +'<li class="info_name"><c:out value="${arraylist_plan_public.id }"></c:out></li>'
+        	        +'<li class="info_selected"><c:out value="${arraylist_plan_public.places_count }"></c:out></li></ul>'
+        	    +'<div class="plan_like"><a href=""><i class="far fa-heart"></i></a></div>'
+        	    +'<div class="plan_icon">'
+        	        +'<a href=""><i class="far fa-share-square"></i></a>&nbsp;'
+        	        +'<a href=""><i class="far fa-edit"></i></a>&nbsp;'
+        	        +'<a href=""><i class="far fa-trash-alt"></i></a></div></div></div>'
+        	+'<hr><div class="plan_comment"><c:out value="${arraylist_plan_public.plan_comment }"></c:out></div>';
+        	cont_public_plan.append(plan_con);
+        	'</c:forEach>'
+		}
 
     $("#btn_make_plan_container").click(function(){
         make_plan_con();

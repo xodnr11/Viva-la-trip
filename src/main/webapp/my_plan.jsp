@@ -5,18 +5,17 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Viva La Trip</title>
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-<!--CSS-->
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/makeSchedule.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-<script src="https://kit.fontawesome.com/f633810772.js" crossorigin="anonymous"></script><!-- 아이콘 -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Viva La Trip</title>
+	<script src="https://kit.fontawesome.com/f633810772.js" crossorigin="anonymous"></script><!-- 아이콘 -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script><!-- 제이쿼리 -->
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script><!-- 데이트피커 -->
+	<!--CSS-->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
 </head>
 <body>
@@ -26,15 +25,15 @@
         <div id="header">
       		<!-- 플렉스박스 적용으로 container 삭제 -->
                 <nav class="header">
-                    <div class="header-logo">
+                    <div class="header_logo">
                     	<i class="fab fa-apple"></i>
                         <a id="logo" href="<%=request.getContextPath()%>/">Viva La Trip</a>
                     </div>
-                    <ul class="header-select">
+                    <ul class="header_select">
                     	<li><a href="#">국내</a></li>
                     	<li><a href="#">해외</a></li>
                     </ul>
-                    <div class="header-menu">
+                    <div class="header_menu">
                     	<c:set var="id_"  value="${id }" />
                         <a href="login">로그인</a>
                         <c:if test="${not empty id}">

@@ -14,7 +14,7 @@
 <!--CSS-->
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/makeSchedule.css">
+<link rel="stylesheet" href="css/make_plan.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 <script src="https://kit.fontawesome.com/f633810772.js" crossorigin="anonymous"></script><!-- 아이콘 -->
 </head>
@@ -23,15 +23,15 @@
 	<div id="header">
       		<!-- 플렉스박스 적용으로 container 삭제 -->
                 <nav class="header">
-                    <div class="header-logo">
+                    <div class="header_logo">
                     	<i class="fab fa-apple"></i>
-                        <a id="logo" href="index">Viva La Trip</a>
+                       <a id="logo" href="<%=request.getContextPath()%>/">Viva La Trip</a>
                     </div>
                     <!-- <ul class="header-select">
                     	<li><a href="#">국내</a></li>
                     	<li><a href="#">해외</a></li>
                     </ul> -->
-                    <div class="header-menu">
+                    <div class="header_menu">
                     	<c:set var="id_"  value="${id }" />
                     	<a href="my_plan.do?id=${id }">내일정</a>
                         <a href="login">로그인</a>
@@ -48,7 +48,7 @@
 			style="width: 100%; height: 100%; position: relative; overflow: hidden;"></div>
 		<div id="table_wrap" >
 			<div id="calendar">
-				<input class="dateSelector" placeholder="날짜 입력" style="width: 100%;"/>
+				<input class="date_selector" placeholder="날짜 입력" style="width: 100%;"/>
 			</div>
 			<hr>
 			<div id="table">
@@ -57,7 +57,7 @@
 		</div>
 		
 		<script>
-			var dateSelector = document.querySelector('.dateSelector');
+			var dateSelector = document.querySelector('.date_selector');
 			dateSelector.flatpickr({
 				mode: "range",
 			    minDate: "today"

@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+#wrap {background-color: #f8f9fa;}
+
+#header {}
+#contents {width: 1200px; margin: 0 auto;}
+#footer {}
+
+/*다른사람의 여행일정 타이틀*/
+#cont_title {border-bottom: 1px rgb(88, 88, 88) solid; position: relative;}
+#cont_title .major_title {height: 200px; font-size:50px; display: flex; align-items: center; justify-content: center;}
+#cont_title .list_order {position: absolute; bottom: 5px; right: 5px; box-shadow: 0 0 0 1px rgb(6, 214, 23) inset;}
+
+
+#cont_main {display: flex;}
+
+#cont_aside {width: 100px;}
+#cont_aside .menu_box {margin: 8px; position: sticky; top: 10%; left: 0;}
+#cont_aside .menu_box .city_korea {margin-bottom: 10px;}
+#cont_aside .menu_box .city_abroad {}
+
+#cont_aside .menu_box .city_title {font-size: 23px; font-weight: bold;}
+#cont_aside .menu_box .city_list li {height: 23px;}
+#cont_aside .menu_box .city_list a {color: rgb(99, 99, 99); font-size: 15px;}
+
+* {box-sizing: border-box;}
+
+#cont_public_plan {width: 1100px;}
+#cont_public_plan .plan_container {float: left; width: 500px; height: 200px; padding: 5px; margin: 25px 0 25px 50px; background-color: #fff;}
+#cont_public_plan .plan_container hr {margin: 5px 0 0 0;}
+
+#cont_public_plan .plan_contents {display: flex;}
+
+#cont_public_plan .plan_container .plan_img {}
+#cont_public_plan .plan_container .plan_img img {height: 140px; width: 140px; background-size: cover; background-position: center; background-repeat: no-repeat;}
+#cont_public_plan .plan_container .plan_info {position: relative; padding: 10px;flex-grow: 1; font-size: 18px;}
+#cont_public_plan .plan_container .plan_info #info_title {font-size: 25px; font-weight: bold;}
+#cont_public_plan .plan_container .plan_info .plan_like {position: absolute; right: 5px; top: 5px;}
+#cont_public_plan .plan_container .plan_info .plan_icon {position: absolute; right: 5px; bottom: 5px;}
+#cont_public_plan .plan_container .plan_comment {}
