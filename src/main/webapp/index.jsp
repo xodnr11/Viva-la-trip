@@ -194,38 +194,33 @@
                         <div class="title">
                             <h2>Viva La Trip이 인정한 인기 여행지</h2>
                         </div>
-                        <div class="popular_li">
-                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지1"></a></div>
-                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지2"></a></div>
-                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지3"></a></div>
-                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지4"></a></div>
-                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지5"></a></div>
-                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지6"></a></div>
-                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지7"></a></div>
-                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지8"></a></div>
-                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지9"></a></div>
-                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지10"></a></div>
-                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지11"></a></div>
-                            <div class="de_li"><a href="#"><img src="#" alt="인기 여행지12"></a></div>
+                        <div class="popular_list">
+                            <div class="area_li"><a href="#"><img src="#" alt="인기 여행지1"></a></div>
+                            <div class="area_li"><a href="#"><img src="#" alt="인기 여행지2"></a></div>
+                            <div class="area_li"><a href="#"><img src="#" alt="인기 여행지3"></a></div>
+                            <div class="area_li"><a href="#"><img src="#" alt="인기 여행지4"></a></div>
+                            <div class="area_li"><a href="#"><img src="#" alt="인기 여행지5"></a></div>
+                            <div class="area_li"><a href="#"><img src="#" alt="인기 여행지6"></a></div>
+                            <div class="area_li"><a href="#"><img src="#" alt="인기 여행지7"></a></div>
+                            <div class="area_li"><a href="#"><img src="#" alt="인기 여행지8"></a></div>
+                            <div class="area_li"><a href="#"><img src="#" alt="인기 여행지9"></a></div>
+                            <div class="area_li"><a href="#"><img src="#" alt="인기 여행지10"></a></div>
+                            <div class="area_li"><a href="#"><img src="#" alt="인기 여행지11"></a></div>
+                            <div class="area_li"><a href="#"><img src="#" alt="인기 여행지12"></a></div>
                         </div>
                         <ul>
-        					<li class="prev-arrow"><i class="fas fa-chevron-left"></i></li>
-        					<li class="next-arrow"><i class="fas fa-chevron-right"></i></li>
+        					<li class="prev_arrow"><i class="fas fa-chevron-left"></i></li>
+        					<li class="next_arrow"><i class="fas fa-chevron-right"></i></li>
     					</ul>
-                        <!--<ul>
-                            <li class="destination1"><img src="" alt="여행지1"></li>
-                            <li class="destination2"><img src="" alt="여행지2"></li>
-                            <li class="destination3"><img src="" alt="여행지3"></li>
-                        </ul>-->
                     </div>
                 </div>
             </div>
-            <div id="cont_others"> <!-- 더보기 토글 -->
+            <div id="cont_public"> <!-- 더보기 토글 -->
                 <div class="container">
-                    <div class="cont_others">
-                        <div class="title">
+                    <div class="cont_public">
+                        <div class="cont_public_title">
                             <h2>다른 사람들의 일정 목록</h2>
-                            <a id="other_list" href="other_plan.jsp">더 찾아보기</a>
+                            <a id="go_public_plan_list" href="other_plan.jsp">더 찾아보기</a>
                         </div>
                         <ul>
                             <li class="destination1">

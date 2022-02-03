@@ -1,12 +1,12 @@
-$(".popular_li").slick({
+$(".popular_list").slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
     autoplay: true,
     autoplaySpeed: 7000,
     dots: true,
-    prevArrow: $('.prev-arrow'),
-    nextArrow: $('.next-arrow')
+    prevArrow: $('.prev_arrow'),
+    nextArrow: $('.next_arrow')
 
 });
 
