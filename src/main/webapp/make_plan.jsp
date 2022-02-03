@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>  
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -24,14 +25,20 @@
                 <nav class="header">
                     <div class="header-logo">
                     	<i class="fab fa-apple"></i>
-                        <a id="logo" href="#">Viva La Trip</a>
+                        <a id="logo" href="index">Viva La Trip</a>
                     </div>
                     <!-- <ul class="header-select">
                     	<li><a href="#">국내</a></li>
                     	<li><a href="#">해외</a></li>
                     </ul> -->
                     <div class="header-menu">
-                        <a href="login.jsp">로그인</a>
+                    	<c:set var="id_"  value="${id }" />
+                    	<a href="my_plan.do?id=${id }">내일정</a>
+                        <a href="login">로그인</a>
+                        <c:set var="id_"  value="${id }" />
+                        <c:if test="${not empty id}">
+                        	<a onclick="location.href=''"><c:out value="${id }"></c:out></a>
+                        </c:if>
                     </div>
                 </nav>
 
@@ -71,16 +78,16 @@
 			<div id="pagination"></div>
 		</div>
 	</div>
-
+	<c:set var="selected_area"  value="${selected_area_ }" />
 	<script type="text/javascript"
 		src="//dapi.kakao.com/v2/maps/sdk.js?appkey=eb35eb3a356a7589f696a82e382206f1&libraries=services"></script>
 	<script>
 
 		//값받아서 찢아버리기
-		temp = location.href.split("?");
+		var temp = '<c:out value="${selected_area}"/>'
 		//test11
 		//디코딩해서 지역만 남기기
-		var area = decodeURI(temp[1]);
+		var area = decodeURI(temp);
 
 		//jquery  id keyword의 input태그의 value에 space(선택 지역)을 담는다.
 		$('input[id=keyword]').attr('value',area);
@@ -325,7 +332,28 @@
 			}
 		}
 	</script>
-
+	<form action="make_my_plan">
+		<table border="1">
+			<tr>
+				<td>아이디</td>
+				<td>여행지역</td>
+				<td>첫날</td>
+				<td>마지막날</td>
+				<td>여행지 목록</td>
+				<td>여행 제목</td>
+				<td>생성</td>
+			</tr>	
+			<tr>
+				<td><input name="id" value="${id }"></td>
+				<td><input name="area" value="${selected_area}"></td>
+				<td><input name="start_date"></td>
+				<td><input name="end_date"></td>
+				<td><input name="places"></td>
+				<td><input name="info_title"></td>
+				<td><button>일정 생성</button></td>
+			</tr>
+		</table>
+	</form>
 </body>
 
 </html>

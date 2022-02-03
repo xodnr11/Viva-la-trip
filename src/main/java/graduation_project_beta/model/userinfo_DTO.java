@@ -1,25 +1,28 @@
 package graduation_project_beta.model;
 
-public class DTO {
-	public DTO(int no, String id, String pw,String Date_of_birth,String Gender,String UserName) {
+public class userinfo_DTO {
+	public userinfo_DTO(int no, String id, String pw, String UserName, String liked) {
 		super();
 		this.no = no;
 		this.id = id;
 		this.pw = pw;
-		this.Date_of_birth = Date_of_birth;
-		this.Gender = Gender;
 		this.UserName = UserName;
+		this.liked = liked;
 	}
 	
 	private int no;
 	private String id;
 	private String pw;
-	private String Date_of_birth;
-	private String Gender;
 	private String UserName;
-	
+	private String liked;
 	public int getNo() {
 		return no;
+	}
+	public String getLiked() {
+		return liked;
+	}
+	public void setLiked(String liked) {
+		this.liked = liked;
 	}
 	public void setNo(int no) {
 		this.no = no;
@@ -35,18 +38,6 @@ public class DTO {
 	}
 	public void setPw(String pw) {
 		this.pw = pw;
-	}
-	public String geDate_of_birth() {
-		return Date_of_birth;
-	}
-	public void setDate_of_birth(String Date_of_birth) {
-		this.Date_of_birth = Date_of_birth;
-	}
-	public String getGender() {
-		return Gender;
-	}
-	public void setGender(String Gender) {
-		this.Gender = Gender;
 	}
 	public String getUserName() {
 		return UserName;

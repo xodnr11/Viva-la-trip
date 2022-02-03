@@ -1,4 +1,5 @@
 <%@page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>  
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -30,10 +31,15 @@
             <nav class="header">
                 <div class="header-logo">
                     <i class="fab fa-apple"></i>
-                    <a id="logo" href="#">Viva La Trip</a>
+                    <a id="logo" href="index">Viva La Trip</a>
                 </div>
                 <div class="header-menu">
-                    <a onclick="location.href='login.do'">로그인</a>
+                    <a href="my_plan">내일정</a>
+                    <a href="login">로그인</a>
+                    <c:set var="id_"  value="${id }" />
+                       <c:if test="${not empty id_}">
+                       	<a onclick="location.href=''"><c:out value="${id_ }"></c:out></a>
+                       </c:if>
                 </div>
             </nav>
         </div>
@@ -42,7 +48,7 @@
             <!-- cont_title -->
             <div id="cont_title">
                 <div class="container">
-                    <div class="major_title">다른 사람의 여행 일정</div>
+                    <div class="major_title">다른 사람의 여행 일정</div> <!-- 새로고침 추가 -->
                     <div class="list_order">
                         <span id="order_recent">
                             최신순
@@ -94,18 +100,66 @@
                 </div>
                 <!-- cont_others_list -->
                 <div id="cont_others_list">
-
+					
                 </div>
             </div>
         </div>
         <div id="footer">
             <div class="container">
-                <button id="btn_make_plan_container">더보기</button>
+                <button id="btn_make_plan_container">내일정 보기</button>
             </div>
         </div>
     </div>
     
-    <script type="text/javascript" src="js/other_plan.js"></script>
+   	<!-- <div class="plan_contents">
+						<div class="plan_img">
+							<img src="img.webp" href(unknown)>
+						</div>
+						<div>
+							<ul>
+								<li>
+									
+								</li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div></div>
+							<div></div>
+						</div>
+					</div> -->
+    
+    <script>
+	
+    function make_plan_con() {
+        cont_others_list = document.getElementById('cont_others_list');
+		
+        //var id = '${id}';
+        '<c:forEach var="arraylist_plan_public" items="${arraylist_plan_public }">'
+        plan_con = document.createElement('div');
+        plan_con.setAttribute("class","plan_container");
+        plan_con.innerHTML = '<div class="plan_contents">' 
+        +'<div class="plan_img">'
+            +'<img src="img1.webp" href=""></img></div>'
+        +'<div class="plan_info">'
+            +'<ul><li><a href="" id="info_title"><c:out value="${arraylist_plan_public.info_title }"></c:out></a></li>'
+                +'<li class="info_date"><c:out value="${arraylist_plan_public.start_date }"></c:out>~<c:out value="${arraylist_plan_public.end_date }"></c:out></li>'
+                +'<li class="info_name"><c:out value="${arraylist_plan_public.id }"></c:out></li>'
+                +'<li class="info_selected"><c:out value="${arraylist_plan_public.places_count }"></c:out></li></ul>'
+            +'<div class="plan_like"><a href=""><i class="far fa-heart"></i></a></div>'
+            +'<div class="plan_icon">'
+                +'<a href=""><i class="far fa-share-square"></i></a>&nbsp;'
+                +'<a href=""><i class="far fa-edit"></i></a>&nbsp;'
+                +'<a href=""><i class="far fa-trash-alt"></i></a></div></div></div>'
+        +'<hr><div class="plan_comment"><c:out value="${arraylist_plan_public.plan_comment }"></c:out></div>';
+        cont_others_list.append(plan_con);
+        '</c:forEach>'
+    }
+
+    $("#btn_make_plan_container").click(function(){
+        make_plan_con();
+    });
+    </script>
 
 </body>
 

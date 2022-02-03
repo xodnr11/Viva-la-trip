@@ -1,6 +1,7 @@
 <%@page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"  %>  
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko">	
 
 <head>
     <meta charset="UTF-8">
@@ -31,14 +32,19 @@
                 <nav class="header">
                     <div class="header-logo">
                     	<i class="fab fa-apple"></i>
-                        <a id="logo" href="#">Viva La Trip</a>
+                        <a id="logo" href="<%=request.getContextPath()%>/">Viva La Trip</a>
                     </div>
                     <ul class="header-select">
                     	<li><a href="#">국내</a></li>
                     	<li><a href="#">해외</a></li>
                     </ul>
                     <div class="header-menu">
-                        <a onclick="location.href='login.do'">로그인</a>
+                    	<c:set var="id_"  value="${id }" />
+                        <a href="my_plan.do?id=${id }">내일정</a>
+                        <a href="login">로그인</a>
+                        <c:if test="${not empty id}">
+                        	<a onclick="location.href=''"><c:out value="${id }"></c:out></a>
+                        </c:if>
                     </div>
                 </nav>
 
@@ -111,7 +117,8 @@
                                                 selected_area += jbSplit[i] + " ";
                                         }
                                         //makeSchedule로 보내기
-                                        location.href="makeSchedule.jsp?" + selected_area;
+                                        var id = '<c:out value="${id_}"/>';
+                                        location.href="make_plan?area="+selected_area+"&id="+id;
                                     }
                                     var btn1 = document.getElementById("btn1");
                                     btn1.onclick = send;
@@ -225,12 +232,13 @@
                     <div class="cont_others">
                         <div class="title">
                             <h2>다른 사람들의 일정 목록</h2>
-                            <a id="other_list" href="other_plan.jsp">더 찾아보기</a>
+                            <h2>다른 사람들의 여행 일정</h2>
+                            <a id="other_list" href="public_plan?id=${id_ }">더 찾아보기</a>
                         </div>
                         <ul>
-                            <li class="destination1">
+                            <li class="destination1"> <!-- plan_info -->
                                 <img src="" alt="여행지1">
-                                <div class="description">일정 정보</div>
+                                <div class="description">일정 정보</div> <!-- plan_info -->
                             </li>
                             <li class="destination2">
                                 <img src="" alt="여행지2">
@@ -291,7 +299,7 @@
                     <div class="cont_others">
                         <div class="title">
                             <h2>다른 사람들의 일정 목록</h2>
-                            <a id="other_list" href="other_plan.jsp">더 찾아보기</a>
+                            <a id="other_list" href="public_plan?id=${id_ }">더 찾아보기</a>
                         </div>
                         <ul id="des_li">
                             <li class="des">
@@ -377,7 +385,7 @@
                     <div class="cont_others">
                         <div class="title">
                             <h2>다른 사람들의 일정 목록</h2>
-                            <a id="other_list" href="other_plan.jsp">더 찾아보기</a>
+                            <a id="other_list" href="public_plan?id=${id_ }">더 찾아보기</a>
                         </div>
                         <ul id="others_list"></ul>
                         <button id="btnLoadIntinity">더보기</button>
