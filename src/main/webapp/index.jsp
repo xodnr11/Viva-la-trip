@@ -30,7 +30,7 @@
         <div id="header">
       		<!-- 플렉스박스 적용으로 container 삭제 -->
                 <nav class="header">
-                    <div class="header-logo">
+                    <div class="header_logo">
                     	<i class="fab fa-apple"></i>
                         <a id="logo" href="<%=request.getContextPath()%>/">Viva La Trip</a>
                     </div>

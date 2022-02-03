@@ -19,11 +19,11 @@
 /*헤더*/
 #header {position: sticky; top: 0; background: #fff; z-index: 2;}
 .header {display: flex; justify-content: space-between; align-items: center; padding: 8px 12px;}
-.header .header-logo {font-size: 25px;}
-.header .header-logo i {}
-.header .header-select {font-size: 25px; display: flex;}
-.header .header-menu {width: 148px; text-align: right;}
-.header .header-menu a {}
+.header .header_logo {font-size: 25px;}
+.header .header_logo i {}
+.header .header_select {font-size: 25px; display: flex;}
+.header .header_menu {width: 148px; text-align: right;}
+.header .header_menu a {}
 
 /* 지도 */
 
