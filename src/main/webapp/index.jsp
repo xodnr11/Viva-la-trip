@@ -227,12 +227,9 @@
                     <div class="cont_public">
                         <div class="cont_public_title">
                             <h2>다른 사람들의 일정 목록</h2>
-<<<<<<< HEAD
                             <a id="go_public_plan_list" href="other_plan.jsp">더 찾아보기</a>
-=======
                             <h2>다른 사람들의 여행 일정</h2>
                             <a id="other_list" href="public_plan?id=${id_ }">더 찾아보기</a>
->>>>>>> branch 'master' of https://github.com/xodnr11/Viva-la-trip.git
                         </div>
                         <ul>
                             <li class="destination1"> <!-- plan_info -->
