@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import graduation_project_beta.model.DAO;
-import graduation_project_beta.model.DTO;
+import graduation_project_beta.model.userinfo_DAO;
+import graduation_project_beta.model.userinfo_DTO;
 
 @WebServlet("/make_member_joinpro.do")
 public class make_member_joinproCon extends HttpServlet{
@@ -24,9 +24,9 @@ public class make_member_joinproCon extends HttpServlet{
 	}
 	
 	protected void reqPro(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {	
-		DAO instance = DAO.getInstance(); //객체 주소 불러옴(객체 만듬)
+		userinfo_DAO instance = userinfo_DAO.getInstance(); //객체 주소 불러옴(객체 만듬)
 		instance.getMember(); //select 함수 불러오기
-		ArrayList<DTO> arraylist = instance.arraylist; //어레이 리스트 가져오기
+		ArrayList<userinfo_DTO> arraylist = instance.arraylist; //어레이 리스트 가져오기
 		int log = -1; //
 		
 	
@@ -41,10 +41,9 @@ public class make_member_joinproCon extends HttpServlet{
 		}
 		if(log != 1){ //아이디 중복 x //회원가입 성공
 			String pw = request.getParameter("pw");
-			String date_of_birth = request.getParameter("date_of_birth");
-			String gender = request.getParameter("gender");
 			String username = request.getParameter("username");
-			instance.setMember(id, pw, date_of_birth, gender,username);
+			String liked = "";
+			instance.setMember(id, pw, username,liked);
 			//회원전용 페이지로 이동
 			RequestDispatcher dis = request.getRequestDispatcher("index.jsp");
 			dis.forward(request, response);

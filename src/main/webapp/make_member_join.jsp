@@ -14,12 +14,10 @@
         <form action="make_member_joinpro.do">
             <div class="form-item-username">
                 <input name="username" placeholder="Name">
-                <input name="gender" placeholder="Ex)M or W">
             </div>
 			
             <div class="form-item">
             	<input name="id" placeholder="ID">	
-                <input name="date_of_birth" placeholder="Ex)19450815">
             </div>
 
             <div class="form-item">
@@ -39,7 +37,7 @@
             <div class="form-btns">
                 <button class="signup" type="submit">가입하기</button>
                 <div class="options">
-                    이미 가입하신 아이디가 있으신가요? <a onclick="location.href='login.do'">로그인 하러가기</a>
+                    이미 가입하신 아이디가 있으신가요? <a href="login">로그인 하러가기</a>
                 </div>
             </div>
 

@@ -35,9 +35,10 @@
             </button>
     
             <div class="bottomText">
-                아이디가 없다면? <a onclick="location.href='make_member_join.do'">회원가입</a>
+                아이디가 없다면? <a href="make_member_join">회원가입</a>
             </div>
         </form>
+        
     </div>
 	
 

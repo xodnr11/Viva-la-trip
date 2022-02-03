@@ -9,8 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import graduation_project_beta.model.DAO;
-import graduation_project_beta.model.DTO;
+import graduation_project_beta.model.userinfo_DAO;
+import graduation_project_beta.model.userinfo_DTO;
 
 @WebServlet("/loginpro.do")
 public class loginproCon extends HttpServlet{
@@ -21,9 +21,11 @@ public class loginproCon extends HttpServlet{
 		reqPro(request ,response);
 	}
 	protected void reqPro(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {	
-		DAO instance = DAO.getInstance();
+		
+		
+		userinfo_DAO instance = userinfo_DAO.getInstance();
 		instance.getMember();
-		ArrayList<DTO> arraylist = instance.arraylist;
+		ArrayList<userinfo_DTO> arraylist = instance.arraylist;
 		
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
@@ -36,6 +38,7 @@ public class loginproCon extends HttpServlet{
 			}
 		}
 		if(log == 1) {
+			request.setAttribute("id",id);
 			RequestDispatcher dis = request.getRequestDispatcher("index.jsp");
 			dis.forward(request, response);
 		}else {
